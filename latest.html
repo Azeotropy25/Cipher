@@ -148,10 +148,15 @@
         </div>
 
         <div class="flex justify-center items-center py-10 pb-0">
-            <button class="btn btn-primary btn-block max-w-4xl">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSebIbk1-v_kq3o3xNgsBVvCiAsApgfpS_WkRwRxB7WdeXSTlQ/viewform?usp=dialog" 
+               class="btn btn-primary btn-block max-w-4xl text-center"
+               target="_blank" 
+               rel="noopener noreferrer">
                 FEEDBACK & SURVEY
-            </button>
+            </a>
         </div>
+        
+        
 
         <div class="flex justify-center items-center p-14">
             <div class="card w-2xl bg-base-100 shadow-xl p-4">
@@ -163,14 +168,27 @@
                         In case you have any doubts regarding the hunt or any clue, you can use the 'Submit Query' button and we will look into it at once. It may not be possible for us to respond to each of you personally, so we will be posting our answers to genuine queries here. The name and email associated with the query will not be displayed anywhere. Please refresh the page to check the recent updates.
                     </p>
                     <div class="card-actions justify-center mt-4">
-                        <button class="btn btn-primary btn-wide">Submit Query</button>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZwju-yNmV-QfHT85870uoDK-0grtrzt2ZXZQIzSHC2enu2Q/viewform?usp=dialog" 
+                           class="btn btn-primary btn-wide" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Submit Query
+                        </a>
                     </div>
+                    
                     <p class="text-center mt-4">
                         Resolved queries and updates are listed below, do read them before submitting a new one:
                     </p>
+                    
                     <div class="card-actions justify-center">
-                        <button class="btn btn-primary btn-wide">Query Responses</button>
+                        <a href="https://docs.google.com/spreadsheets/d/1mMx6n9macVQiMmwvKvrPdVK2ZtpGfQzFy0d1js5kNno/edit?usp=sharing" 
+                           class="btn btn-primary btn-wide" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Query Responses
+                        </a>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -226,7 +244,7 @@
             const timerInterval = setInterval(updateCountdown, 1000);
         }
 
-        const targetDate = new Date("March 16, 2025 01:17:00").getTime();
+        const targetDate = new Date("March 16, 2025 11:00:00").getTime();
         startCountdown(targetDate);
 
         function dismissAnnouncement() {
@@ -235,15 +253,7 @@
             setTimeout(() => {
                 announcementBox.style.display = 'none';
             }, 500);
-
-            if (distance < 0) {
-            clearInterval(timerInterval);
-            const countdownElements = document.querySelectorAll(".countdown");
-            countdownElements.forEach(element => {
-                element.textContent = "Round Started";  // Changed from "Event Started" to "Round Started"
-            });
         }
-    }
     </script>
 </body>
 </html>
